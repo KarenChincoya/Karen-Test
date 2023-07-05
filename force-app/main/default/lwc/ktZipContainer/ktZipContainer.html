@@ -1,0 +1,37 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-04-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card>
+
+        <div class="exampleHolder">
+            <lightning-spinner if:true={isLoading} alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_3-of-3">
+                <div class="slds-align_absolute-center slds-text-title_bold">Welcome to the ZIP codes finder!</div>
+            </div>
+        </div>    
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3">
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-input type="text" label="ZIP Code" value={zipCode} class="zip"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-var-p-top_medium">
+                <lightning-button-group>
+                    <lightning-button label="Search" icon-name="utility:search" onclick={handleSearch}></lightning-button>
+                </lightning-button-group>
+            </div>
+        </div>
+    </lightning-card>
+
+    <c-kt-result result={result}></c-kt-result>
+        
+</template>

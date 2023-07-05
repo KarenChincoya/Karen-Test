@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Zip_Codes_App</members>
+		<name>CustomApplication</name>
+	</types>
+    <types>
+		<members>KT_New_Case_Platform_Event_Handler</members>
+		<members>KT_Publish_Contact_Request_to_Platform_Event</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Country__c</members>
+        <members>Search_Result__c</members>
+		<members>Search__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Country__c</members>
+		<members>Zip_Codes</members>
+        <members>Search__c</members>
+		<name>CustomTab</name>
+	</types>
+    <types>
+		<members>Country__c-Country Layout</members>
+		<members>Search_Result__c-Search Result Layout</members>
+		<members>Search__c-Search Layout</members>
+		<name>Layout</name>
+	</types>
+    <types>
+		<members>KT_ZipController</members>
+		<members>KT_ZipUtils</members>
+		<name>ApexClass</name>
+	</types>
+    <types>
+		<members>ktResult</members>
+		<members>ktZipContainer</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>55.0</version>
+</Package>
